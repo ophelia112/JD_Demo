@@ -1,0 +1,163 @@
+a{
+    color: #999;
+    vertical-align: top;
+}
+a.red{
+    color: red;
+}
+.index-iconfont{
+    font-family: index_iconfont;
+    font-size: 20px;
+    font-style: normal;
+}
+ul li{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.fl{
+    float: left;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.fl > li > .icon-position{
+    font-family: index_iconfont; 
+    font-size: 14px;
+    color: #f10215;
+    margin-right: 4px;
+    vertical-align: top;
+}
+
+.fr{
+    float: right;
+    height: 30px;
+}
+
+.fr li{
+    z-index: 200;
+    float: left;
+    position: relative;
+    
+}
+
+.shortcut-item .dt{
+    padding: 0px 6px;
+    border: 1px solid transparent;
+}
+
+.spacer{
+    /* overflow: hidden; */
+    margin: 10px 5px;
+    width: 2px;
+    height: 10px;
+    background-color: #ccc;
+}
+
+.fr .shortcut-item i{
+    font-family: index_iconfont; 
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.shortcut-item:hover .dt-icon{
+    background-color: #fff;
+    border-bottom: none;
+    border-color: #eee;
+}
+
+/* .shortcut-item:hover .dt-icon::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    bottom: 1px;
+    left: 0;
+    background-color: #fff;
+    z-index: 101;
+} */
+
+/* .shortcut-item dl.clearfix{
+    clear: both;
+    content: "";
+    display: block;
+} */
+.shortcut-item:hover .my-dropdown{
+    display: block;
+}
+.my-dropdown.my-jd {
+    width: 280px;
+}
+
+.my-dropdown {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #eee;
+    display: block;
+    z-index: 100;
+    top: 30px;
+    left: 0px;
+    display: none;
+}
+
+.my-dropdown dl{
+    border-bottom: 1px solid #eee;
+    padding: 10px 0 10px 15px;
+}
+
+.my-dropdown dt {
+    font-weight: 900;
+}
+
+.my-dropdown dd{
+    line-height: 24px;
+    float: left;
+    white-space: nowrap;
+}
+
+.my-dropdown.my-jd dd{
+    width: 126px;
+}
+
+.my-dropdown.my-company{
+    width: 140px;
+}
+
+.my-dropdown.my-dropdown.my-company dd{
+    width: 56px;
+}
+
+.my-dropdown.my-serve {
+    width: 170px;
+    /* 使其右侧与上标题对齐 */
+    left: auto;
+    right: 0;
+}
+
+.my-dropdown.my-serve dd {
+    width: 70px;
+}
+
+.my-dropdown.app {
+    width: 1190px;
+    right: -84px;
+    left: auto;
+    padding: 15px 0;
+}
+
+.my-dropdown.app dl {
+    width: 340px;
+    border-left: 1px solid #eee;
+    border-bottom: none;
+    float: left;
+}
+.my-dropdown.app dd {
+    width: 85px;
+}

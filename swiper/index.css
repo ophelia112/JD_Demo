@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 2290697 */
+    src: url('http://at.alicdn.com/t/font_2290697_6dk0fga9vtn.eot');
+    src: url('http://at.alicdn.com/t/font_2290697_6dk0fga9vtn.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_2290697_6dk0fga9vtn.woff2') format('woff2'),
+    url('http://at.alicdn.com/t/font_2290697_6dk0fga9vtn.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_2290697_6dk0fga9vtn.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_2290697_6dk0fga9vtn.svg#iconfont') format('svg');
+}
+
+.my-swiper-btn{
+    font-family: iconfont;
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    top: 50%;
+    /* transform设置？ */
+    margin-top: -17.5px;
+    background-color: rgba(0,0,0,.15);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+}
+.my-swiper-btn:hover{
+    background-color: rgba(0,0,0,.4);
+}
+.my-swiper-btn.my-swiper-rbtn{
+    right: -3px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.my-swiper-btn.my-swiper-lbtn{
+    left: -3px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.my-swiper-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+/* 除去轮播图中的默认样式 */
+.my-swiper-wrapper > ul{
+    padding: 0;
+    margin: 0;
+}
+/* 除去轮播图中的默认样式 */
+.my-swiper-wrapper > ul > li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.my-swiper-animate .my-swiper-content{
+    position: absolute;
+    left: 0;
+}
+.my-swiper-animate .my-swiper-content::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+    /* div                 li  */
+.my-swiper-animate .my-swiper-item{
+    /* 因为有浮动因此该父元素需清理浮动 */
+    float: left;
+}
+    /* div                 ul  */
+.my-swiper-fade .my-swiper-content{
+    position: relative;
+}
+    /* div             li  */
+.my-swiper-fade .my-swiper-item{
+    /* 轮播图片重叠 */
+    position: absolute;
+}
+
+.my-swiper-spots{
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    line-height: 20px;
+    padding: 10px 20px;
+
+    /* 方法1小圆点位置 */
+    left: 0;
+    right: 0;
+    /* 方法2小圆点位置  */
+    /* width: 100%;
+    box-sizing:border-box;
+    padding: 30px 20px; */
+}
+
+.my-swiper-spots span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.4);
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+/* 当前页的与原点对应，原点变换颜色 */
+.my-swiper-spots span.my-swiper-current{
+    background-color: #fff;
+}

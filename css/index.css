@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'index_iconfont';  /* project id 2294940 */
+    src: url('//at.alicdn.com/t/font_2294940_6jbbfhv1hrs.eot');
+    src: url('//at.alicdn.com/t/font_2294940_6jbbfhv1hrs.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_2294940_6jbbfhv1hrs.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_2294940_6jbbfhv1hrs.woff') format('woff'),
+    url('//at.alicdn.com/t/font_2294940_6jbbfhv1hrs.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_2294940_6jbbfhv1hrs.svg#iconfont') format('svg');
+  }
+body {
+    margin: 0;
+    background-color: #f4f4f4;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li,
+ol,
+dl,
+dd,
+dt {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+i{
+    font-style:normal;
+}
+
+.shortcut {
+    height: 30px;
+    border-bottom: 1px solid #ddd;
+    background-color: #e3e4e5;
+}
+
+.header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    height: 140px;
+}
+
+.fs {
+    height: 480px;
+    padding-top: 10px;
+}
+
+.seckill {
+    height: 260px;
+    margin-bottom: 20px;
+}
+
+.w{
+    width: 1190px;
+    margin: 0 auto;
+    height: 100%;
+    color: #999;
+}
+
+/* 注意点，可以添加这个类名 */
+.index-iconfont{
+    font-family: index_iconfont;
+    font-size: 12px;
+    font-style: normal;
+}
